@@ -3,13 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@koa/cors": "2",
+    "axios": "^0.18.0",
+    "http-proxy-middleware": "^0.19.1",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "netlify-lambda": "^1.4.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "serverless-http": "^1.9.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build:netlify": "netlify-lambda build functions",
+    "serve": "netlify-lambda serve functions",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -21,5 +31,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "babel-loader": "^8.0.5"
+  }
 }
