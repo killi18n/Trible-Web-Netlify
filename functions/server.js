@@ -1,6 +1,6 @@
 const Koa = require("koa");
 const Router = require("koa-router");
-const bodyParser = require("koa-bodyParser");
+const bodyParser = require("koa-bodyparser");
 const serverless = require("serverless-http");
 const cors = require("@koa/cors");
 const ssr = require("./ssr/render");
